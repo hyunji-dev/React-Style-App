@@ -6,7 +6,7 @@ const Header = () => {
     // index.html 파일 경로 기준으로 보기
     const HeaderStyle = styled.div`
         background-image: url('images/background.jpg');
-        height: 880px;
+        height: 750px;
         background-size: 100% 100%;
     `;
 
@@ -17,7 +17,7 @@ const Header = () => {
         display: grid; /* 플렉스로 고쳐볼 것!!! */
         grid-template-columns: auto auto; /*2개로 찢음*/
         justify-content: space-between; /* 정렬: 좌우 끝으로 배치 */
-        padding: 10px;
+        padding: 20px;
     `;
 
     // 메뉴는 주로 ul 태그로 만듬
@@ -39,7 +39,7 @@ const Header = () => {
         font-weight: 800;
     `;
 
-    const Section1Style = styled.div``;
+    const SectionStyle = styled.div``;
 
     return (
         <HeaderStyle>
@@ -53,9 +53,9 @@ const Header = () => {
                     <li>로그인</li>
                 </MenuStyle>
             </NavStyle>
-            <Section1Style>
+            <SectionStyle>
                 <Search />
-            </Section1Style>
+            </SectionStyle>
         </HeaderStyle>
     );
 };

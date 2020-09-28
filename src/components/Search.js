@@ -4,13 +4,14 @@ import styled from 'styled-components';
 const Search = () => {
     const SearchStyle = styled.div`
         width: 430px;
-        height: 500px;
         display: inline-block; /* 가로만 자기크기만큼 잡히고 세로는 늘릴 수 있음 */
         background-color: white;
         position: relative; /* 기본: static(물흐르듯이 내려감) / relative(관계형:이전의 다른 애들이랑 연결되서 배치??)*/
-        top: 10px; /* position이 static이 아니면 줄 수 있는 속성 */
-        left: 50px; /* position이 static이 아니면 줄 수 있는 속성 */
+        top: 30px; /* position이 static이 아니면 줄 수 있는 속성 */
+        left: 100px; /* position이 static이 아니면 줄 수 있는 속성 */
         padding: 25px 30px; /* 여백: (가로 세로) (왼/위/오/아) */
+        box-shadow: 0 2px 2px 0 rgb(214, 214, 214);
+        border-radius: 10px;
     `;
 
     const SearchTitleStyle = styled.div`
